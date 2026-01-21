@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Zalando Sans SemiExpanded';
+    src: url('fonts/Zalando Sans/subset-ZalandoSansSemiExpanded-Bold.woff2') format('woff2'),
+        url('fonts/Zalando Sans/subset-ZalandoSansSemiExpanded-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Zalando Sans SemiExpanded';
+    src: url('fonts/Zalando Sans/subset-ZalandoSansSemiExpanded-Light.woff2') format('woff2'),
+        url('fonts/Zalando Sans/subset-ZalandoSansSemiExpanded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Zalando Sans SemiExpanded';
+    src: url('fonts/Zalando Sans/ZalandoSansSemiExpanded-SemiBold.woff2') format('woff2'),
+        url('fonts/Zalando Sans/ZalandoSansSemiExpanded-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    src: url('fonts/Material/MaterialSymbolsOutlined.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zalando Sans SemiCondensed';
+    src: url('fonts/Zalando Sans/ZalandoSansSemiCondensed-Black.woff2') format('woff2'),
+        url('fonts/Zalando Sans/ZalandoSansSemiCondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.header{
+  width:100%;
+  height:auto;
+  aspect-ratio: 3 / 1;
+}
+.wrapper{
+  max-width:900px;
+  margin: auto;
+}
+h1{
+  font-family: "Zalando Sans SemiCondensed";
+  font-weight:900;
+  font-size: 3rem;
+  padding:2rem;
+}
+.main-description{
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height:1.75rem;
+  padding:2rem;
+  padding-top:0;
+}
+.chapter{
+  background-color:#f4f4f4;
+  margin-bottom:3rem;
+}
+.chapter *{
+  padding:1rem;
+}
+.chapter-title{
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight:700;
+  font-size:2rem;
+}
+h2{
+  font-size:inherit;
+}
+.chapter-description{
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 300;
+  padding:2rem;
+  font-size: 1.25rem;
+}
+.measure-list{
+  padding:0;
+  list-style-type:none;
+}
+.measure-item{
+  font-family: "Zalando Sans SemiExpanded";
+  padding-block: 0.5rem;
+}
+.measure-item:nth-child(2n+1) {
+  background-color:#fbfbfb;
+}
+.measure-title{
+  font-weight: 500;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items:center;
+  cursor:pointer;
+}
+.measure-title:hover h3{
+  text-decoration: underline;
+}
+.arrow{
+  padding:0;
+  margin:0;
+  vertical-align:middle;
+  font-size: 2rem;
+  font-family: "Material Symbols Outlined";
+  transition-timing-function: ease-in-out ;
+  transition-duration: 0.3s;
+}
+h3{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+.measure-description{
+  overflow:hidden;
+  transition-timing-function: ease-in-out ;
+  transition-duration: 0.6s;
+  height:auto;
+  opacity:0;
+}
+.short{
+  font-size:1.25rem;
+  font-weight:500;
+}
+.long{
+  font-size:1.15rem;
+  font-weight:300;
+  padding-left:2rem;
+  margin-left: 1rem;
+  border-left: 1px solid grey;
+  color:#474747;
+  padding:0;
+  padding-inline: 2rem ;
+  margin-block: 2rem ;
+}
