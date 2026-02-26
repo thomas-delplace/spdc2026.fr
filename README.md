@@ -1,11 +1,3 @@
+spdc2026.fr
 
-  # CAMPAIGN SITE
-
-  This is a code bundle for CAMPAIGN SITE. The original project is available at https://www.figma.com/design/cV6debrRCrmjvNjDliSz6k/CAMPAIGN-SITE.
-
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+Site de campagne municipales 2026 pour la liste Faisons mieux avec Vous ! pour la ville de Saint-Pierre-des-Corps
