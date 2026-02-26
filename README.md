@@ -1,3 +1,11 @@
-# Faisons mieux avec vous !
 
-Site de campagne de la France Insoumise pour les municipales des 15 et 22 mars 2026 à Saint-Pierre-des-Corps
+  # CAMPAIGN SITE
+
+  This is a code bundle for CAMPAIGN SITE. The original project is available at https://www.figma.com/design/cV6debrRCrmjvNjDliSz6k/CAMPAIGN-SITE.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  

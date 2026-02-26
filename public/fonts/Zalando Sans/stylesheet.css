@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Zalando Sans SemiCondensed';
-    src: url('ZalandoSansSemiCondensed-Black.woff2') format('woff2'),
-        url('ZalandoSansSemiCondensed-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
