@@ -4,7 +4,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { ArrowRight, Briefcase, GraduationCap, Shield, Heart, Building, ChevronDown, ChevronUp } from 'lucide-react';
 import Hero from '../components/Hero';
-import { Program } from '../data/program';
+import Program from '../data/program';
 export function ProgramPage() {
   const [expandedChapter, setExpandedChapter] = useState<string | null>(null);
   const toggleChapter = (id: string) => {

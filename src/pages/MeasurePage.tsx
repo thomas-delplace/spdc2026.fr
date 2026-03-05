@@ -4,7 +4,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { ArrowRight, Briefcase, GraduationCap, Shield, Heart, Building, ChevronDown, ChevronUp } from 'lucide-react';
 import Hero from '../components/Hero';
-import { Program } from '../data/program';
+import Program from '../data/program';
+import FilAriane from '../components/FilAriane';
 export function MeasurePage() {
   const { chapter , measure} = useParams()
   console.log(Program)
@@ -36,7 +37,7 @@ export function MeasurePage() {
           style={{paddingTop:'20px'}}
           className="py-20 lg:py-24 bg-white">
             <div className="profession-de-foi-container mx-auto px-4 sm:px-6 lg:px-8" style={{fontSize:'1.25rem', borderLeft:`4px solid var(${chapterContent?.color})`, borderBottom:`4px solid var(${chapterContent?.color})`}}>
-              <span className='fil-d-ariane'><Link to='/' className='fil-d-ariane-lien'>Accueil</Link>&nbsp;&nbsp;&nbsp;&#12297; <Link to='/programme' className='fil-d-ariane-lien'>Programme</Link>&nbsp;&nbsp;&nbsp;&#12297; <Link to={`/programme/${chapterContent?.link}`} className='fil-d-ariane-lien'>{chapterContent?.title}</Link></span>
+              <FilAriane chapter={chapterContent}/>
               <h2 className="text-3xl lg:text-5xl text-white mb-8" style={{color:`var(${chapterContent?.color})`}} data-aos="fade-up" data-aos-delay="100">
                 {measureContent?.title}
               </h2>
