@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Links = {
     Accueil : () => (<Link to='/' className='fil-d-ariane-lien'>Accueil</Link>),
     Programme : () => (<Link to='/programme' className='fil-d-ariane-lien'>Programme</Link>),
-    Chapter : ({slug, text}) => (<Link to={slug} className='fil-d-ariane-lien'>{text}</Link>)
+    Chapter : ({slug, text}) => (<Link to={`/programme/${slug}`} className='fil-d-ariane-lien'>{text}</Link>)
 }
 
 const FilAriane = ({chapter  = {}}) => {
