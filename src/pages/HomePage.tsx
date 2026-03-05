@@ -11,8 +11,8 @@ import HeroCandidate from '../components/HeroCandidate';
 export function HomePage() {
   const nextEvent = {
       id: 1,
-      title: 'Réunion publique',
-      date: 'Jeudi 26 février 2026',
+      title: 'Dernière réunion publique !',
+      date: 'Mercredi 11 mars 2026',
       time: '19h00 - 21h30',
       location: 'Salle de la Médaille, 15 rue de la République',
       description: '',
