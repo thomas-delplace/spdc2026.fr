@@ -7,101 +7,6 @@ import Hero from '../components/Hero';
 import { Program } from '../data/program';
 export function ProgramPage() {
   const [expandedChapter, setExpandedChapter] = useState<string | null>(null);
-
-  const pillars = [
-    {
-      id: 'economy',
-      link: "/programme/economie-et-emploi",
-      icon: Briefcase,
-      title: 'Economic Empowerment',
-      summary: 'Creating economic opportunities and supporting business growth across Nigeria.',
-      keyPoints: [
-        {text:'Support for SMEs through access to capital and business development services', link:'https://google.fr'},
-        {text:'Job creation programs targeting youth and underserved communities', link:''},
-        {text:'Investment policies that attract capital while protecting local businesses', link:''},
-        {text:'Infrastructure development to support economic activity', link:''},
-      ],
-      objectives: [
-        'Establish SME support fund with transparent application process',
-        'Launch skills-to-employment programs in partnership with private sector',
-        'Review and reform tax policies to encourage entrepreneurship',
-        'Develop digital economy infrastructure nationwide',
-      ],
-    },
-    {
-      id: 'education',
-      icon: GraduationCap,
-      title: 'Education & Human Capital Development',
-      summary: 'Building a skilled, educated population ready for the 21st century.',
-      keyPoints: [
-        'Increased funding for public education with strict oversight',
-        'Skills-based and technology-driven curriculum reform',
-        'Teacher training and professional development programs',
-        'Youth-focused scholarship and mentorship initiatives',
-      ],
-      objectives: [
-        'Increase education budget allocation to meet UNESCO standards',
-        'Integrate digital literacy into primary and secondary curricula',
-        'Establish teacher excellence programs with performance incentives',
-        'Create 10,000 tech scholarships for underserved students annually',
-      ],
-    },
-    {
-      id: 'security',
-      icon: Shield,
-      title: 'Security & Rule of Law',
-      summary: 'Ensuring safety, justice, and institutional integrity for all citizens.',
-      keyPoints: [
-        'Strengthening community-based security initiatives',
-        'Professionalizing security institutions through training and accountability',
-        'Zero tolerance for corruption in law enforcement',
-        'Justice system reforms for faster, fairer outcomes',
-      ],
-      objectives: [
-        'Deploy community policing units in all local government areas',
-        'Institute mandatory training and regular audits for security personnel',
-        'Establish independent oversight body for law enforcement',
-        'Digitize court systems to reduce case backlogs',
-      ],
-    },
-    {
-      id: 'healthcare',
-      icon: Heart,
-      title: 'Healthcare & Social Welfare',
-      summary: 'Accessible, affordable healthcare as a fundamental right for all Nigerians.',
-      keyPoints: [
-        'Improved access to affordable healthcare services',
-        'Support systems for vulnerable populations',
-        'Strengthening primary healthcare infrastructure',
-        'Health insurance expansion and reform',
-      ],
-      objectives: [
-        'Upgrade primary healthcare centers in every local government',
-        'Expand health insurance coverage to reach 50% of population',
-        'Launch maternal and child health programs in rural areas',
-        'Establish emergency response systems nationwide',
-      ],
-    },
-    {
-      id: 'governance',
-      icon: Building,
-      title: 'Transparency & Governance',
-      summary: 'Open, accountable government that serves the people.',
-      keyPoints: [
-        'Open government practices with public access to information',
-        'Clear, regular reporting on public spending and projects',
-        'Citizen participation in policy-making and budgeting',
-        'Digital platforms for government services and feedback',
-      ],
-      objectives: [
-        'Publish all government contracts and budgets online',
-        'Implement quarterly public reporting on all major projects',
-        'Create digital platforms for citizen input on policies',
-        'Establish anti-corruption hotlines with whistleblower protection',
-      ],
-    },
-  ];
-
   const toggleChapter = (id: string) => {
     setExpandedChapter(expandedChapter === id ? null : id);
   };
@@ -167,23 +72,20 @@ export function ProgramPage() {
                       ? 'border-pink shadow-lg' 
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
-                   style={expandedChapter === chapter.id ? {border:`2px solid ${chapter.color}`} : {}}>
+                   style={expandedChapter === chapter.id ? {border:`2px solid var(${chapter.color})`} : {}}>
                   <CardContent className="p-0">
                     {/* Card Header */}
-                    <div className="p-6 lg:p-8 flex items-start gap-6 cursor-pointer"
+                    <div className="p-6 lg:p-8 flex items-center gap-6 cursor-pointer"
                     onClick={() => toggleChapter(chapter.id)}>
                       <div className="flex-shrink-0">
-                        <div className='w-16 h-16 rounded-lg flex items-center justify-center' style={{backgroundColor:chapter.color}}>
-                          <chapter.icon className="text-white" size={28} strokeWidth={2} />
+                        <div className='w-16 h-16 rounded-lg flex items-center justify-center' style={{backgroundColor:`var(${chapter.color})`}}>
+                          <span style={{fontFamily:'Apotek Comp', fontSize:'1.5rem', color:'white'}}>➜</span>
                         </div>
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className='text-2xl lg:text-3xl mb-3' style={{color:chapter.color}}>
+                      <div className="flex-1 min-w-0 align-center items-center">
+                        <h3 className='text-2xl lg:text-3xl' style={{color:`var(${chapter.color})`}}>
                           {index + 1}. {chapter.title}
                         </h3>
-                        <p className={`text-lg text-gray-600 leading-relaxed`}>
-                          {chapter.summary}
-                        </p>
                       </div>
                       <div className="flex-shrink-0">
                         {expandedChapter === chapter.id ? (
@@ -197,25 +99,33 @@ export function ProgramPage() {
                     {/* Expanded Content */}
                     {expandedChapter === chapter.id && (
                       <div className="border-t border-gray-200 bg-gray-50 p-6 lg:p-8" style={{borderRadius:'20px', paddingBottom:0}}>
-                        <div className="grid md:grid-cols-2 gap-8">
+                        <div className="grid gap-8">
                           {/* Key Policy Points */}
                           <div>
-                            <h4 className="text-lg font-bold text-pink mb-4" style={{color:chapter.color}}>
+                            {chapter.summary}
+                            <h4 style={{marginTop:'2rem',color:`color-mix(in srgb, var(${chapter.color}) 80%, transparent)`, fontSize:'1.5rem', letterSpacing:'0.1em'}}>
                               Nos mesures phares
                             </h4>
-                            <ul className="space-y-3">
+                            <span style={{fontFamily:'Config Variable', color:'rgba(0,0,0,0.5)'}}>(cliquez sur une mesure pour obtenir plus d'informations)</span>
+                            {/* <ul className="space-y-3"> */}
                               {chapter.measures.map((measure, idx) => (
                                 measure.key &&
-                                <li key={idx} className="flex items-start gap-3">
-                                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-pink mt-2"></div>
-                                  <span className="text-gray-700 leading-relaxed">{measure.title}</span>
-                                </li>
+                                <Link to={`${chapter.link}/${measure.id}`}>
+                                  <Card key={measure.id} className={`border-2 transition-all measure-box measure-box${chapter.color}`}>
+                                    <h3 className='config-variable' style={{fontSize:'1.25rem'}}>{measure.title}</h3>
+                                  </Card>
+                                </Link>
+                                
+                                // <li key={idx} className="flex items-start gap-3">
+                                //   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-pink mt-2"></div>
+                                //   <span className="text-gray-700 leading-relaxed">{measure.title}</span>
+                                // </li>
                               ))}
-                            </ul>
+                            {/* </ul> */}
                           </div>
 
                           {/* Specific Objectives */}
-                          <div>
+                          {/* <div>
                             <h4 className="text-lg font-bold text-pink mb-4" style={{color:chapter.color}}>
                               Nos objectifs
                             </h4>
@@ -229,11 +139,15 @@ export function ProgramPage() {
                                 </li>
                               ))}
                             </ul>
-                          </div>
+                          </div> */}
                         </div>
-                        <div style={{paddingBlock:'2rem', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-                          <Link to={chapter.link}>
-                            <Button style={{cursor:'pointer',display:'block', paddingBlock:'1rem', height:'auto', background:`linear-gradient(to left, color-mix(in srgb, ${chapter.color}, white 30%), ${chapter.color})`}}>Les autres mesures</Button>
+                        <div style={{paddingBlock:'2rem', display:'flex', flexDirection:'column', justifyContent:'stretch', alignItems:'stretch'}}>
+                          <Link to={`/programme/${chapter.link}`}>
+                            <Button
+                              className='button-chapter'
+                              data-color={chapter.color}>
+                                  Les autres mesures
+                            </Button>
                           </Link>
                         </div>
                       </div>
