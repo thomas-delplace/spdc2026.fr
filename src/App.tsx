@@ -22,6 +22,8 @@ import { MediaPage } from './pages/MediaPage';
 import { EventsPage } from './pages/EventsPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPage } from './pages/PrivacyPage';
+import { ChapterPage } from './pages/ChapterPage';
+import { MeasurePage } from './pages/MeasurePage';
 
 export default function App() {
   useEffect(() => {
@@ -43,6 +45,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/programme" element={<ProgramPage />} />
+            <Route path="/programme/:chapter" element={<ChapterPage />} />
+            <Route path="/programme/:chapter/:measure" element={<MeasurePage />} />
             <Route path="/liste" element={<Liste />} />
             <Route path="/candidat/:id" element={<Candidat />} />
             <Route path="/agenda" element={<EventsPage />} />

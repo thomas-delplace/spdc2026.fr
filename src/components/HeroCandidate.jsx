@@ -1,6 +1,6 @@
 import candidats from "../data/candidats"
 
-const HeroCandidate = ({rang, children}) => {
+const HeroCandidate = ({children, rang = null}) => {
     let candidat
     if (!rang){
         candidat = candidats[0]
@@ -11,7 +11,7 @@ const HeroCandidate = ({rang, children}) => {
         <section className="heroImage-section relative text-white overflow-hidden candidate">
         {/* style={{backgroundImage:`${headerImage.src}`}} */}
         {/* Background Image for Mobile - Full Bleed */}
-        {rang && <span className="text-white text-8xl lg:text-8xl rang-candidat-hero">{candidat.rang}</span>}
+        {rang ? <span className="text-white text-8xl lg:text-8xl rang-candidat-hero">{candidat.rang}</span> : null}
         <div className="absolute inset-0 lg:hidden">
           <img
             src={candidat.photo}

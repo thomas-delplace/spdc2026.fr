@@ -5222,3 +5222,158 @@ p{
     margin-bottom:40px;
   }
 }
+.measure-box{
+  padding:0.75rem;
+  margin-block: 1rem;
+  border-radius:5px;
+}
+.measure-box:hover{
+  padding-left: 2rem;
+}
+.measure-box--color-green-500:hover{
+  background-color:var(--color-green-500)
+}
+.measure-box--color-yellow-500:hover{
+  background-color:var(--color-yellow-500)
+}
+.measure-box--color-pink:hover{
+  background-color:var(--color-pink)
+}
+.measure-box--color-pink-lfi:hover{
+  background-color:var(--color-pink-lfi)
+}
+.measure-box--color-blue-600:hover{
+  background-color:var(--color-blue-600)
+}
+.measure-box--color-blue-lfi:hover{
+  background-color:var(--color-blue-lfi)
+}
+.measure-box:hover h3{
+  color:white;
+}
+.fil-d-ariane{
+  display: inline-block;
+  margin-bottom: 2rem;
+  color:gray;
+}
+.fil-d-ariane-lien:hover{
+  color:black;
+  text-decoration: underline;
+}
+.arrow-right{
+  font-family: 'Apotek Comp';
+  color:white;
+  font-size: 1.5rem;
+}
+ul li{
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 2rem;
+}
+ul li::marker{
+  content:"➜ ";
+}
+.measure-text{
+  color:gray;
+}
+h5{
+  font-size:1.5rem;
+  letter-spacing: 0.01rem;
+  font-family: "Config Variable";
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  margin-bottom: 1rem;
+}
+.right-slide,
+.right-slide > * {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.right-slide{
+  position:relative;
+  border-width:1px ;
+  border-style: solid;
+  border-radius: 0;
+  overflow: hidden;
+}
+.chapterpage-measures > a:not(:last-child) .right-slide{
+  border-bottom-width: 0px;
+}
+.right-slide:hover > * {
+  transform: translateX(2rem);
+}
+.left-border{
+  position:absolute;
+  top:0;
+  left:-2rem;
+  height:100%;
+  width:2rem;
+}
+.right-slide .start-0{
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.start-0{
+  transform: scale(0.1);
+}
+.start-0 *{
+  color:transparent;
+}
+.right-slide:hover .start-0{
+  transform:scale(1);
+}
+.right-slide:hover .start-0 *{
+  color:white;
+}
+
+.measure-head-img{
+  width:100%;
+  aspect-ratio:2 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button-chapter{
+  cursor:pointer;
+  display:block;
+  padding-block:1rem;
+  height:auto;
+  width:100%;
+}
+.button-chapter[data-color=--color-pink]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-pink), white 20%), var(--color-pink));
+}
+.button-chapter[data-color=--color-blue-600]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-blue-600), white 20%), var(--color-blue-600));
+}
+.button-chapter[data-color=--color-yellow-500]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-yellow-500), white 20%), var(--color-yellow-500));
+}
+.button-chapter[data-color=--color-pink-lfi]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-pink-lfi), white 20%), var(--color-pink-lfi));
+}
+.button-chapter[data-color=--color-green-500]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-green-500), white 20%), var(--color-green-500));
+}
+.button-chapter[data-color=--color-blue-lfi]{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-blue-lfi), white 20%), var(--color-blue-lfi));
+}
+
+.button-chapter[data-color=--color-pink]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-pink), white 40%), var(--color-pink));
+}
+.button-chapter[data-color=--color-blue-600]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-blue-600), white 40%), var(--color-blue-600));
+}
+.button-chapter[data-color=--color-yellow-500]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-yellow-500), white 40%), var(--color-yellow-500));
+}
+.button-chapter[data-color=--color-pink-lfi]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-pink-lfi), white 40%), var(--color-pink-lfi));
+}
+.button-chapter[data-color=--color-green-500]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-green-500), white 40%), var(--color-green-500));
+}
+.button-chapter[data-color=--color-blue-lfi]:hover{
+  background:linear-gradient(to left, color-mix(in srgb, var(--color-blue-lfi), white 40%), var(--color-blue-lfi));
+}
