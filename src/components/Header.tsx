@@ -28,7 +28,7 @@ export function Header() {
             </div>
           </Link>
           {/* Desktop Navigation */}
-          <nav style={{width:'100%', justifyContent:'center'}} className="hidden lg:flex items-center gap-1">
+          <nav style={{width:'100%', justifyContent:'center'}} className="lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
