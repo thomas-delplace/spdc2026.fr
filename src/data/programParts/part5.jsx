@@ -167,19 +167,45 @@ const part5 = {
         //////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////
         {
-            id:'',
+            id:'fruitiers-parcs-et-jardins-publics',
             image:{
                 src:'',
                 alt:''
             },
             key:false,
-            title:"",
-            text:(
-                <>
-                
-                </>
-            )
+            title:"Intégrer une part de fruitiers dans la végétation des parcs et jardins publics",
+            text:(null)
         },
+        {
+            id:'jardins-familiaux-vergers-communaux',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Créer des jardins familiaux et vergers communaux",
+            text:(null)
+        },
+        {
+            id:'fontaines-eau-potable',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Déployer un réseau de fontaines d’eau potable",
+            text:(null)
+        },
+        {
+            id:'mobilites-douces',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Développer et sécuriser les mobilités douces",
+            text:(null)
+        }
     ],
     objectives:''
 }

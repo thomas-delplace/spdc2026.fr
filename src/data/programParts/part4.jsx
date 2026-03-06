@@ -193,10 +193,94 @@ const part4 = {
             //////////////////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////////////////
             {
-                id:'',
+                id:'affichage-libre-associatif',
                 image:{src:'',alt:''},
                 key:false,
-                title:'',
+                title:"Développer des espaces d’affichage libre associatif",
+                text:(null)
+            },
+            {
+                id:'zeap',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Créer des zones d’actions artistiques prioritaires",
+                text:(null)
+            },
+            {
+                id:'bibliotèques-scolaires',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Réinstaller des bibliothèques scolaires",
+                text:(null)
+            },
+            {
+                id:'animations-sportives-culturelles',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Développer les animations culturelles et sportives pendant les vacances",
+                text:(null)
+            },
+            {
+                id:'festival-de-rue',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Faire de la fête municipale estivale un festival de rue",
+                text:(null)
+            },
+            {
+                id:'scenes-ouvertes',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Installer des scènes ouvertes tout l'été dans tous les quartiers de la ville",
+                text:(null)
+            },
+            {
+                id:'tremplin-municipal',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Créer un tremplin musical municipal annuel",
+                text:(null)
+            },
+            {
+                id:'mur-expression-libre',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Mettre en place des murs d’expression libre artistique (graph, collage, etc.)",
+                text:(null)
+            },
+            {
+                id:'marche-createurs',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Renforcer le marché hivernal des créateurs et et créer une édition estivale",
+                text:(null)
+            },
+            {
+                id:'affichage-libre-associatif',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Organiser des marchés festifs culturels : marché de Nöel, de Hannouka, du Ramadan ...",
+                text:(null)
+            },
+            {
+                id:'guinguette',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Créer une guinguette",
+                text:(null)
+            },
+            {
+                id:'escale-loire-a-velo',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Développer une escale Loire à Vélo avec tiers-lieu et recyclerie",
+                text:(null)
+            },
+            {
+                id:'pret-vehicules-assos',
+                image:{src:'',alt:''},
+                key:false,
+                title:"Mettre en place un service municipal de prêt de véhicules (utilitaires et minibus) pour les associations",
                 text:(null)
             },
         ],

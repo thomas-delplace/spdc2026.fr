@@ -180,7 +180,7 @@ const part6 = {
                 alt:''
             },
             key:true,
-            title:"Créer un observatoir communal des inégalités et des discrimination et constituer la municipalité partie civile des plaintes des victimes de racisme, de validisme, sexisme et LGBTIphobie",
+            title:"Créer un observatoire communal des inégalités et des discrimination et constituer la municipalité partie civile des plaintes des victimes de racisme, de validisme, sexisme et LGBTIphobie",
             text:(
                 <>
                     <h5 style={{color:`var(--color-blue-lfi)`}}>
@@ -221,18 +221,44 @@ const part6 = {
         //////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////
         {
-            id:'',
+            id:'desinstaller-camera-videosurveillance',
             image:{
                 src:'',
                 alt:''
             },
             key:false,
-            title:"",
-            text:(
-                <>
-                
-                </>
-            )
+            title:"Désinstaller les caméras de vidéosurveillance à la fin du contrat de concession",
+            text:(null)
+        },
+        {
+            id:'infrastructures-routieres',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Lutter contre les comportements à risque sur la route en repensant les infrastructures routières",
+            text:(null)
+        },
+        {
+            id:'former-gestion-handicap',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Former les policiers municipaux à la gestion du handicap, notamment du handicap psychique",
+            text:(null)
+        },
+        {
+            id:'supprimer-affichage-publicitaire',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Supprimer l’affichage publicitaire en zones d’habitation (compétence métropolitaine)",
+            text:(null)
         },
     ],
     objectives:''

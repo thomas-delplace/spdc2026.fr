@@ -178,19 +178,55 @@ const part3 = {
             //////////////////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////////////////
             {
-                id:'',
+                id:'etat-lieux-projets-urbanisme',
                 image:{
                     src:'',
                     alt:''
                 },
                 key:false,
-                title:'',
-                text:(
-                    <>
-                    
-                    </>
-                )
+                title:'Réaliser un état des lieux des projets d’urbanisme',
+                text:(null)
             },
+            {
+                id:'requalification-cachin',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Requalifier la rue Marcel Cachin',
+                text:(null)
+            },
+            {
+                id:'repenser-rabaterie',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Repenser la rue de la Rabaterie',
+                text:(null)
+            },
+            {
+                id:'requalifier-maurice-thorez',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Requalifier la place Maurice Thorez',
+                text:(null)
+            },
+            {
+                id:'artistes-locaux-reseau-csc',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Encourager le rayonnement des artiste locaux en leurs proposant le réseaux municipal pour se produire au Centre Culturel ',
+                text:(null)
+            }
         ],
         objectives:''
     }
