@@ -1,6 +1,6 @@
 import part1 from './programParts/part1'
 import part2 from './programParts/part2'
-import part3 from './programParts/part3'
+import part3 from './programParts/Part3'
 import part4 from './programParts/part4'
 import part5 from './programParts/part5'
 import part6 from './programParts/part6'
