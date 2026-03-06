@@ -20,7 +20,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center stretch h-20">
+        <div
+          className="flex justify-space-between items-center stretch h-20"
+          style={{width:"100%"}}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div style={{width:'280px'}}>
@@ -28,7 +30,7 @@ export function Header() {
             </div>
           </Link>
           {/* Desktop Navigation */}
-          <nav style={{width:'100%', justifyContent:'center'}} className="lg:flex items-center gap-1">
+          <nav style={{width:'100%', justifyContent:'center'}} className="mb:hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -49,23 +51,22 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <SocialBar id='01'/>
           </div>
 
           {/* Mobile Menu Button */}
-          {/* <button
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button> */}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
-        {/*{isMenuOpen && (
+        {isMenuOpen && (
           <nav className="lg:hidden py-6 border-t border-gray-200 space-y-1">
             {navLinks.map((link) => (
               <Link
@@ -92,9 +93,9 @@ export function Header() {
                   Support
                 </Button>
               </Link>
-            </div> /}
+            </div> */}
           </nav>
-        )}*/}
+        )}
       </div>
     </header>
   );

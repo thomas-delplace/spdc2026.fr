@@ -256,11 +256,11 @@ const candidats = [
         age:"",
         profession:"",
         description:"",
-        photo:""
+        photo:WomanSilhouette
     },
     {
         rang:27,
-        nom:"Andriamaneva Ratsimihah",
+        nom:"A. Ratsimihah",
         prenom:"Héry",
         age:65,
         profession:"Enseignant retraité",

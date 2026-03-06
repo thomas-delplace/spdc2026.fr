@@ -2857,6 +2857,12 @@
     }
   }
 
+  @media (width <= 64rem) {
+    .mb\:hidden {
+      display: none;
+    }
+  }
+
   @media (width >= 64rem) {
     .lg\:h-full {
       height: 100%;
@@ -4559,6 +4565,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   justify-content: center;
   align-items: center;
 }
+.justify-space-between{
+  justify-content:space-between;
+}
 .max-width-1250{
   max-width:1250px;
 }
@@ -5377,4 +5386,30 @@ h5{
 }
 .button-chapter[data-color=--color-blue-lfi]:hover{
   background:linear-gradient(to left, color-mix(in srgb, var(--color-blue-lfi), white 40%), var(--color-blue-lfi));
+}
+
+.all-measures-list{
+  font-family: 'Config Variable';
+  font-size: 1.5rem;
+}
+.all-measures-list li{
+  margin-bottom:10px;
+}
+.all-measures-list li[data-color=--color-pink]::marker{
+  color:var(--color-pink)
+}
+.all-measures-list li[data-color=--color-blue-600]::marker{
+  color:var(--color-blue-600)
+}
+.all-measures-list li[data-color=--color-yellow-500]::marker{
+  color:var(--color-yellow-500)
+}
+.all-measures-list li[data-color=--color-pink-lfi]::marker{
+  color:var(--color-pink-lfi)
+}
+.all-measures-list li[data-color=--color-green-500]::marker{
+  color:var(--color-green-500)
+}
+.all-measures-list li[data-color=--color-blue-lfi]::marker{
+  color:var(--color-blue-lfi)
 }

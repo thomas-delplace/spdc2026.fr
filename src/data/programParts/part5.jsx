@@ -73,7 +73,7 @@ const part5 = {
             title:"Créer des points d’eau et des fontaines pour rafraîchir la ville et lutter contre les îlots de chaleur",
             text:(
                 <>
-                    <h5 style={{color:`var(--color-pink)`}}>
+                    <h5 style={{color:`var(--color-green-500)`}}>
                     Face aux étés de plus en plus chauds, la ville doit s’adapter pour protéger ses habitants.
                     </h5>
 
@@ -89,7 +89,7 @@ const part5 = {
                     Ces aménagements s’inscrivent dans une stratégie plus large d’adaptation climatique : végétalisation des espaces publics, création d’îlots de fraîcheur et transformation progressive de la ville pour la rendre plus respirable.
                     </p>
 
-                    <p style={{fontWeight:'bold', color:`var(--color-pink)`}}>
+                    <p style={{fontWeight:'bold', color:`var(--color-green-500)`}}>
                     Notre objectif est simple : faire de Saint-Pierre-des-Corps une ville qui protège ses habitants face aux défis climatiques, et où l’espace public reste vivable même lors des étés les plus chauds.
                     </p>
                 </>
@@ -167,19 +167,45 @@ const part5 = {
         //////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////
         {
-            id:'',
+            id:'fruitiers-parcs-et-jardins-publics',
             image:{
                 src:'',
                 alt:''
             },
             key:false,
-            title:"",
-            text:(
-                <>
-                
-                </>
-            )
+            title:"Intégrer une part de fruitiers dans la végétation des parcs et jardins publics",
+            text:(null)
         },
+        {
+            id:'jardins-familiaux-vergers-communaux',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Créer des jardins familiaux et vergers communaux",
+            text:(null)
+        },
+        {
+            id:'fontaines-eau-potable',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Déployer un réseau de fontaines d’eau potable",
+            text:(null)
+        },
+        {
+            id:'mobilites-douces',
+            image:{
+                src:'',
+                alt:''
+            },
+            key:false,
+            title:"Développer et sécuriser les mobilités douces",
+            text:(null)
+        }
     ],
     objectives:''
 }

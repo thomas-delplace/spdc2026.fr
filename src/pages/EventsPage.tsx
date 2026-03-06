@@ -6,25 +6,6 @@ import Hero from '../components/Hero';
 export function EventsPage() {
   const upcomingEvents = [
     {
-      id: 1,
-      title: 'Réunion publique',
-      date: '26 février 2026',
-      time: '19h00 - 21h30',
-      location: 'Salle de la Médaille, 15 rue de la République',
-      description: '',
-      // capacity: '200 seats available',
-      image: '/reupublic.jpg',
-    },
-    {
-      id: 2,
-      title: 'Café et biscuits',
-      date: '28 février 2026',
-      time: '9h30 - 13h00',
-      location: 'Place Maurice Thorez',
-      description: 'Venez discuter avec les membres de l\'équipe autour d\'un café et de quelques biscuits.',
-      image: '/cafebiscuit.jpg',
-    },,
-    {
       id: 2,
       title: 'Café et biscuits',
       date: '7 mars 2026',
@@ -45,6 +26,23 @@ export function EventsPage() {
   ];
 
   const pastEvents = [
+    {
+      title: 'Réunion publique',
+      date: '26 février 2026',
+      time: '19h00 - 21h30',
+      location: 'Salle de la Médaille, 15 rue de la République',
+      description: '',
+      // capacity: '200 seats available',
+      image: '/reupublic.jpg',
+    },
+    {
+      title: 'Café et biscuits',
+      date: '28 février 2026',
+      time: '9h30 - 13h00',
+      location: 'Place Maurice Thorez',
+      summary: 'Encore un marché avec un accueil formidable de la population, des discussions profondes et beaucoup de soutien.',
+      image: '/cafebiscuit.jpg',
+    },
     {
       title: 'Café et biscuits',
       date: '21 février 2026',
@@ -121,11 +119,6 @@ export function EventsPage() {
                           <MapPin size={16} className="text-blue-600" />
                           {event.location}
                         </div>
-                        {event.capacity && 
-                        <div className="flex items-center gap-2 text-gray-600 text-sm">
-                          <Users size={16} className="text-blue-600" />
-                          {event.capacity}
-                        </div>}
                         
                       </div>
                       <p className="text-gray-600 text-sm mb-4">{event.description}</p>
@@ -141,14 +134,13 @@ export function EventsPage() {
       {/* Past Events */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl mb-8 text-center" style={{color:'var(--color-pink)'}}>Recent Events</h2>
+          <h2 className="text-3xl md:text-4xl mb-8 text-center" style={{color:'var(--color-pink)'}}>Événements récents</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {pastEvents.map((event, index) => (
               <Card key={index}>
                 <CardContent className="pt-6">
                   <h3 className="mb-2" style={{color:'var(--color-blue-600)'}}>{event.title}</h3>
                   <div className="text-sm text-gray-500 mb-3">{event.date}</div>
-                  <div className="text-sm text-blue-600 mb-3">{event.attendance}</div>
                   <p className="text-gray-600 text-sm">{event.summary}</p>
                 </CardContent>
               </Card>

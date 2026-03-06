@@ -229,19 +229,105 @@ const part2 = {
             //////////////////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////////////////
             {
-                id:'',
+                id:'aires-jeu-inclusives',
                 image:{
                     src:'',
                     alt:''
                 },
                 key:false,
-                title:'',
-                text:(
-                    <>
-                    
-                    </>
-                )
+                title:"Créer des aires de jeux inclusives",
+                text:(null)
             },
+            {
+                id:'creneaux-sensoriels',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Mettre en place des ''créneaux sensoriels'' à la médiathèque",
+                text:(null)
+            },
+            {
+                id:'formation-accueil-handicap',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Former à l'accueil du public en situation de handicap tous les personnels municipaux.",
+                text:(null)
+            },
+            {
+                id:'opah',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Lutter contre le mal-logement via une Opération Programmée d'Amélioration de l'Habitat (OPAH) en lien avec l’Agence Nationale de l'Habitat ANAH",
+                text:(null)
+            },
+            {
+                id:'arretes-municipaux-peril-insalubrite',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Prendre des arrêtés municipaux de péril ou d’insalubrité lorsque nécessaire",
+                text:(null)
+            },
+            {
+                id:'lutte-nuisibles',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Lutter efficacement contre les nuisibles en lien avec les syndics et bailleurs (fourmis, cafards, rats, punaises de lit, etc.)",
+                text:(null)
+            },
+            {
+                id:'carte-famille-monoparentale',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Créer une carte réduction \"famille monoparentale\" offrant des réductions sur la commune, à la manière de la carte \"famille nombreuse\"",
+                text:(null)
+            },
+            {
+                id:'mutuelle-municipale',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Mettre en place une mutuelle municipale et défendre son extension métropolitaine",
+                text:(null)
+            },
+            {
+                id:'soutien-scolaire',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Réinstaurer l'aide quotidienne aux devoirs",
+                text:(null)
+            },
+            {
+                id:'petit-dejeune-gratuit-a-l-ecole',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Offrir un petit déjeuner gratuit chaque matin à l'école",
+                text:(null)
+            }
         ],
         objectives:''
     }

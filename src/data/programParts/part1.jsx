@@ -294,19 +294,95 @@ const part1 = {
             //////////////////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////////////////
             {
-                id:'',
+                id:'decision-commission-deliberation-conseil-municipal',
                 image:{
                     src:'',
                     alt:''
                 },
                 key:false,
-                title:'',
-                text:(
-                    <>
-                    
-                    </>
-                )
+                title:'Garantir qu’une décision prise en commission fasse l’objet d’une délibération en conseil municipal',
+                text:(null)
             },
+            {
+                id:'publier-indemnites-elus',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Publier le montant des indemnités des élu·es",
+                text:(null)
+            },
+            {
+                id:'publier-rdv-representants-interets-prives',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Publier les rendez-vous avec les représentants d’intérêts privés',
+                text:(null)
+            },
+            {
+                id:'publier-declarations-patrimoine',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Publier les déclarations de patrimoine du Maire, des adjoints et des conseillers métropolitains',
+                text:(null)
+            },
+            {
+                id:'signer-charte-anticor',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Signer la charte Anticor",
+                text:(null)
+            },
+            {
+                id:'debat-orientation-budgetaire-participatif',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Organiser un débat d’orientation budgétaire public et participatif",
+                text:(null)
+            },
+            {
+                id:'documents-budgetaires-accessibles',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Rendre les documents budgétaires accessibles et compréhensibles",
+                text:(null)
+            },
+            {
+                id:'dsp-et-ppp',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:"Lancer une revue générale des Délégations de Services Publics (DSP) et les Partenariats Public-Privé (PPP) avec objectif de retour en régie publique des services essentiels",
+                text:(null)
+            },
+            {
+                id:'referendum-projets-structurants',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Organiser des référendums locaux pour tous les grands projets structurants',
+                text:(null)
+            }
         ],
         objectives:[]
     }
