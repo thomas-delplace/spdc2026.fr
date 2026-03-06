@@ -32,11 +32,11 @@ export function Liste() {
         <div className="wrapper-liste">
           {candidats.map((candidat,key) => (
             <div key={key} className='carte-candidat' data-aos="fade-up" >
-              <Link to={`/candidat/${candidat.rang}`} style={{display:'content', padding:'0', alignSelf:'start', justifySelf:'start'}}>
+              {/* <Link to={`/candidat/${candidat.rang}`} style={{display:'content', padding:'0', alignSelf:'start', justifySelf:'start'}}>
                 <div className='candidat-overlay'>
                   <img src="/plus_round.svg" alt="Plus"/>
                 </div>
-              </Link>
+              </Link> */}
               <img src={candidat.photo}  className='photo-candidat' alt={`Photo de ${candidat.prenom} ${candidat.nom}`} />
               <div className='nom-candidat'><h4 className='nom-candidat-h4'>{`${candidat.prenom} ${candidat.nom}`}</h4></div>
               <span className='rang-candidat-under'>{candidat.rang}</span>
