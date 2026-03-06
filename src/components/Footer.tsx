@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import SocialBar from './socials';
+import SocialBar from './Socials';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
