@@ -5,7 +5,7 @@ import { Badge, badgeVariants } from '../components/ui/badge';
 import { ArrowRight, Users, Target, Shield, Heart, Briefcase, ChevronRight, TrendingUp, Award, CheckCircle2, Calendar, MapPin, Clock} from 'lucide-react';
 import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import ProfessionDeFoi from '../components/Professiondefoi'
-import SocialBar from '../components/socials';
+import SocialBar from '../components/Socials';
 import HeroCandidate from '../components/HeroCandidate';
 
 export function HomePage() {

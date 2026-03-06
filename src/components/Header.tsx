@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import SocialBar from './socials';
+import SocialBar from './Socials';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
