@@ -11,7 +11,7 @@ export function MeasurePage() {
   console.log(Program)
   const chapterContent = Program.find(e => e.link == chapter)
   // if(!chapterContent){ window.location.href = '/' }
-  const measureContent = chapterContent?.measures.find(e => e.id == measure)
+  const measureContent = chapterContent?.measures.find(e => e?.id == measure)
   // if(!measureContent){ window.location.href='/' }
   console.log(chapterContent)
   console.log(measureContent)

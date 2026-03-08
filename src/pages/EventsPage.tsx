@@ -6,8 +6,37 @@ import Hero from '../components/Hero';
 export function EventsPage() {
   const upcomingEvents = [
     {
+      id: 1,
+      title: 'Marché',
+      date: 'Mercredi 11 mars 2026',
+      time: '19h00 - 21h30',
+      location: 'Place Maurice Thorez',
+      description: '',
+      image: '/cafebiscuit.jpg',
+    },
+    {
       id: 2,
-      title: 'Café et biscuits',
+      title: 'Réunion publique',
+      date: 'Mercredi 11 mars 2026',
+      time: '19h00 - 21h30',
+      location: 'Salle de la Médaille, 15 rue de la République',
+      description: '',
+      image: '/reupublic.jpg',
+    },
+    {
+      id: 3,
+      title: 'Marché des déportés',
+      date: 'Vendredi 13 mars 2026',
+      time: '9h30 - 11h30',
+      location: 'Place des déportés',
+      description: '',
+      image: '/cafebiscuit.jpg',
+    }
+  ];
+
+  const pastEvents = [
+    {
+      title: 'Marché',
       date: '7 mars 2026',
       time: '9h30 - 13h00',
       location: 'Place Maurice Thorez',
@@ -15,17 +44,13 @@ export function EventsPage() {
       image: '/cafebiscuit.jpg',
     },
     {
-      id: 2,
-      title: 'Réunion publique',
-      date: '11 mars 2026',
-      time: '19h00 - 21h30',
-      location: 'Salle de la Médaille, 15 rue de la République',
-      description: '',
-      image: '/reupublic.jpg',
-    }
-  ];
-
-  const pastEvents = [
+      title: 'Marché',
+      date: '28 février 2026',
+      time: '9h30 - 13h00',
+      location: 'Place Maurice Thorez',
+      summary: 'Encore un marché avec un accueil formidable de la population, des discussions profondes et beaucoup de soutien.',
+      image: '/cafebiscuit.jpg',
+    },
     {
       title: 'Réunion publique',
       date: '26 février 2026',
@@ -36,15 +61,7 @@ export function EventsPage() {
       image: '/reupublic.jpg',
     },
     {
-      title: 'Café et biscuits',
-      date: '28 février 2026',
-      time: '9h30 - 13h00',
-      location: 'Place Maurice Thorez',
-      summary: 'Encore un marché avec un accueil formidable de la population, des discussions profondes et beaucoup de soutien.',
-      image: '/cafebiscuit.jpg',
-    },
-    {
-      title: 'Café et biscuits',
+      title: 'Marché',
       date: '21 février 2026',
       summary: 'Nous étions au marché de Saint-Pierre-des-Corps, comme tous les samedis, afin de rencontrer la population et échanger avec vous !',
     },
@@ -54,12 +71,12 @@ export function EventsPage() {
       summary: 'De nombreuses personnes sont venues à la salle de la Médaille entendre nos propositions pour les 6 années à venir dans votre ville.',
     },
     {
-      title: 'Café au marché',
+      title: 'Marché',
       date: '14 février 2026',
       summary: 'Comme toujours, le marché était rempli et de nombreuses discutions ont été tenues sur les besoins et les envies de la population.',
     },
     {
-      title: 'Café et gateaux',
+      title: 'Marché',
       date: '7 février 2026',
       summary: 'Encore de longues conversations autour de boissons chaudes et de petites préparations maisons de nos collistiers.',
     },
@@ -67,6 +84,11 @@ export function EventsPage() {
       title: 'Réunion publique',
       date: '6 février 2026',
       summary: 'Une réunion publique à l\'Aubrière bien surprenante par la présence de jeunes adolescents du quartier de la Rabaterie venus nous faire part de leurs craintes et de leurs envies.',
+    },
+    {
+      title: 'Marché',
+      date: '31 janvier 2026',
+      summary: '',
     }
   ];
 

@@ -282,7 +282,17 @@ const part4 = {
                 key:false,
                 title:"Mettre en place un service municipal de prêt de véhicules (utilitaires et minibus) pour les associations",
                 text:(null)
-            },
+            },,
+            {
+                id:'artistes-locaux-reseau-csc',
+                image:{
+                    src:'',
+                    alt:''
+                },
+                key:false,
+                title:'Encourager le rayonnement des artiste locaux en leurs proposant le réseaux municipal pour se produire au Centre Culturel ',
+                text:(null)
+            }
         ],
         objectives:''
     }

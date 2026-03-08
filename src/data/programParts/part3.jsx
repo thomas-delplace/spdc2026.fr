@@ -216,16 +216,6 @@ const part3 = {
                 key:false,
                 title:'Requalifier la place Maurice Thorez',
                 text:(null)
-            },
-            {
-                id:'artistes-locaux-reseau-csc',
-                image:{
-                    src:'',
-                    alt:''
-                },
-                key:false,
-                title:'Encourager le rayonnement des artiste locaux en leurs proposant le réseaux municipal pour se produire au Centre Culturel ',
-                text:(null)
             }
         ],
         objectives:''

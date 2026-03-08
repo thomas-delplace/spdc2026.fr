@@ -14,7 +14,8 @@ export function Header() {
     { path: '/', label: 'Accueil' },
     { path: '/programme', label: 'Programme' },
     { path: '/liste', label: 'Liste' },
-    { path: '/agenda', label: 'Agenda' }
+    { path: '/agenda', label: 'Agenda' },
+    { path: '/galerie', label: 'Galerie' }
   ];
 
   return (
