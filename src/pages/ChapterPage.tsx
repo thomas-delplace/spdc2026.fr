@@ -57,7 +57,7 @@ export function ChapterPage() {
         <div className="max-width-950 chapterpage-measures" style={{margin:"auto", paddingBottom:"50px"}}>
         <h5 style={{fontFamily:'Apotek Comp', color:`var(${chapterContent?.color})`, fontSize:'2rem'}}>Avec vous, nous allons ...</h5>
           {chapterContent?.measures.map((measure, index) => (
-            measure.key
+            measure?.key
             ? <Link to={`/programme/${chapterContent.link}/${measure.id}`}>
                 <Card key={measure.id} className='transition-all right-slide' style={{borderColor:`var(${chapterContent.color})`}} data-aos="fade-up">
                   <div className="left-border" style={{backgroundColor:`var(${chapterContent.color})`}}></div>
@@ -86,9 +86,9 @@ export function ChapterPage() {
           <h5 style={{fontFamily:'Apotek Comp', color:`var(${chapterContent?.color})`, fontSize:'2rem'}}>Mais aussi ...</h5>
           <ul className='all-measures-list'>
             {chapterContent?.measures.map((measure,index) => (
-              measure.key
+              measure?.key
                 ? null
-                : <li data-color={chapterContent.color}>{measure.title}</li>
+                : <li key={index} data-color={chapterContent.color}>{measure?.title}</li>
             ))}
           </ul>
         </div>

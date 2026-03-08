@@ -247,7 +247,7 @@ const candidats = [
         age:71,
         profession:"Notaire retraité",
         description:"",
-        photo:ManSilhouette
+        photo:MichelBerraud
     },
     {
         rang:26,
@@ -301,7 +301,7 @@ const candidats = [
         age:39,
         profession:"Chef cuisinier",
         description:"",
-        photo:MohammedElMaqi
+        photo:ManSilhouette
     },
     {
         rang:32,

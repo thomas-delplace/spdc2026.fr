@@ -110,12 +110,14 @@ const part1 = {
                         </p>
                     </>
                 )
-            },{
+            },
+            {
                 id:"campagnes-actives-inscription-listes-electorales",
                 image:{
                     src:'/measures/electeur.webp',
                     alt:''
                 },
+                key:true,
                 title:"Lancer chaque année une campagne d'inscription sur les listes électorales",
                 text:(
                     <>
@@ -145,7 +147,8 @@ const part1 = {
                     src:'/measures/enquete.webp',
                     alt:''
                 },
-                title:"Effectuer une grande enquête citoyenne sur leur satisfaction quant à l'action de la municipalité",
+                key:true,
+                title:"Effectuer une grande enquête citoyenne de satisfaction quant à l'action de la municipalité",
                 text:(
                     <>
                         <h5 style={{color:`var(--color-pink)`}}>
@@ -262,7 +265,7 @@ const part1 = {
                     src:'',
                     alt:''
                 },
-                key:false,
+                key:true,
                 title:"Publier le montant des indemnités des élu·es",
                 text:(
                     <>
@@ -301,16 +304,6 @@ const part1 = {
                 },
                 key:false,
                 title:'Garantir qu’une décision prise en commission fasse l’objet d’une délibération en conseil municipal',
-                text:(null)
-            },
-            {
-                id:'publier-indemnites-elus',
-                image:{
-                    src:'',
-                    alt:''
-                },
-                key:false,
-                title:"Publier le montant des indemnités des élu·es",
                 text:(null)
             },
             {
